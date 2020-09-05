@@ -1,0 +1,268 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-nav {
+    font-size: 50px;
+    color: red;
+    text-shadow: 0 2px 2px grey;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-nav {
+    list-style: none;
+    margin: 0px;
+    width: 100%; 
+    background: rgb(148, 146, 146);
+    text-decoration: none; 
+    display: flex;
+    flex-direction: row;  
+}
+.main-nav li {
+    border-left: 2px solid springgreen;
+    background: #00af9d ;
+    border: 1px solid wheat;
+    text-align: center;
+    float: left;
+    line-height: 60px;
+    width: 137px;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    font-size: 16px;
+    text-shadow: 0 2px 2px rgb(49, 48, 48);
+    
+}
+.main-nav li:hover{
+    background: springgreen;
+    transition: 1s;
+}
+.sub-nav {
+    display: none;
+    z-index: 9999;
+}
+.sub-nav li {
+    font-size: 12px;
+
+}
+.sub-nav li:hover{
+    background: teal;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 2px rgb(54, 52, 52);
+}
+.main-nav li:hover > .sub-nav{
+    display: block;
+    z-index: 99;
+   
+}
+
+.sub-min-nav{
+    display: none;
+}
+
+.sub-nav li:hover > .sub-min-nav{
+    display: block;
+}
+ 
+.sub-min-nav{
+    top: 15px;
+    right: -30px;
+    position: absolute;
+    width: 30px;
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 40px;
+}
+.section1 > p {
+    height: 50%;
+    font-size: 19px;
+    text-shadow: 0 2px 2px gray;
+    line-height: 27px;
+    padding: 25px;
+    color: rgb(1, 10, 10);
+    font-weight: bolder;
+
+}
+.section2 > p {
+    height: 50%;
+    font-size: 19px;
+    text-shadow: 0 2px 2px gray;
+    line-height: 27px;
+    padding: 25px;
+    color: rgb(0, 10, 10);
+    font-weight: bolder;
+}
+.shoe2 {
+    height: 400px;
+    width: 480px;
+    margin: 20px;
+   border-radius: 110px;
+}
+.bag2 {
+    height: 400px;
+    width: 480px;
+    margin: 20px;
+    border-radius: 110px;
+}
+
+
+.mini-nav {
+    width: 220px;
+    height: 300px;
+    background: rgb(227, 228, 226);   
+    border-radius: 10px; 
+    padding: 11px;
+    display: none;
+   
+}
+.mini1-nav {
+    outline: transparent;
+    padding: 11px;
+    border: none;
+    box-shadow: inset 8px 8px 8px #d1cfcf,
+    inset -8px -8px 8px #ffffff;   
+    border-radius: 10px; 
+    font-size: 13px;
+    text-shadow: 0 2px 1px rgb(180, 178, 178);
+   
+
+}
+.mini1-nav::placeholder {
+    color: rgb(206, 10, 36);
+    font-weight: bold;
+}
+.btn-reg {
+    width: 125px;
+    background: linear-gradient(to top, rgb(4, 175, 89), springgreen);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 40px;
+    height: 32px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.register:hover .mini-nav {
+    display: block;
+}
+
+.search-nav {
+    width: 220px;
+    height: 90px;
+    background: #f1f1ee; 
+    border-radius: 20px; 
+    padding: 11px;
+    position: absolute;
+    left: -30px;
+    display: none;
+   
+}
+.sub-search {
+    outline: transparent;
+    padding: 8px;
+    border: none;
+    box-shadow: inset 8px 8px 8px #b6b3b3,
+    inset -8px -8px 8px #ffffff;   
+    border-radius: 8px; 
+    font-size: 11px;
+    text-shadow: 0 2px 1px rgb(180, 178, 178);
+
+}
+.sub-search::placeholder {
+    color: rgb(66, 184, 158);
+    font-weight: bold;
+}
+.search:hover .search-nav {
+    display: block;
+}
+.mini-pay {
+    width: 220px;
+    height: 300px;
+    background: rgb(227, 228, 226);   
+    border-radius: 10px; 
+    border: 3px solid rgb(255, 252, 252);
+    padding: 11px;
+    display: none;
+   
+}
+.mini1-pay {
+    outline: transparent;
+    padding: 11px;
+    border: none;
+    box-shadow: inset 8px 8px 8px #d1cfcf,
+    inset -8px -8px 8px #ffffff;   
+    border-radius: 10px; 
+    font-size: 13px;
+    text-shadow: 0 2px 1px rgb(180, 178, 178);
+   
+
+}
+.mini1-pay::placeholder {
+    color: rgb(28, 158, 28);
+    font-weight: bold;
+}
+.btn-pay {
+    width: 125px;
+    background: linear-gradient(to top, rgb(97, 243, 170), rgb(13, 155, 84));
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 40px;
+    height: 32px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.payment:hover .mini-pay {
+    display: block;
+}
+.segment {
+    background: rgb(250, 248, 248);
+    width: 100%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.segment1 > .p1 {
+    padding: 0;
+    text-align: justify;
+    font-weight: bolder;
+    color: rgb(6, 119, 119);
+    font-size: 18px;
+   
+}
+.segment1 > .p2 {
+    margin: 30px;
+    padding: 0;
+    text-align: justify; 
+    font-weight: bolder;
+    color: rgb(6, 119, 119);
+    font-size: 18px;
+}
+.pic-seg {
+    width: 180px;
+    height: 150px;
+    float: left;
+    border-radius: 100px;
+    shape-outside: circle();
+    margin: 50px 30px 30px 0;
+
+}
+.pic2-seg {
+    width: 180px;
+    height: 150px;
+    border-radius: 100px;
+    float: left;
+    shape-outside: circle();
+    margin: 20px 30px 30px 0;
+    
+}
